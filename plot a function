@@ -1,0 +1,16 @@
+import matplotlib.pyplot as plt
+import numpy as np
+plt.figure(figsize = (10,10), facecolor = "pink") 
+x = np.linspace(-1.5,1.5,1000)
+f =  x**4 - 2*x**2 #function
+f1 = 4*x**3 - 4*x 
+f2 = 12*x**2 - 4
+
+plt.plot(x,f, color = 'green') #giving colour
+plt.plot(x,f1, color = 'blue')
+plt.plot(x,f2, color = 'red')
+
+plt.xlabel("x axis")
+plt.ylabel("y axis")
+plt.grid(color = 'black') 
+
