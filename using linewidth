@@ -1,0 +1,13 @@
+plt.figure(figsize = (10,10))
+import numpy as np
+x = np.linspace(-5,5,100)
+f0 = np.sin(x) + np.sin(3*x)
+f1 = np.cos(x) - np.cos(3*x)
+f2 = -np.sin(x) - 3*np.sin(3*x)
+plt.ylim(-4,4)
+plt.plot(x,f0, color = 'blue', linewidth = 4)
+plt.plot(x,f1, color = 'green', linewidth =2)
+plt.plot(x,f2, color = 'red')
+plt.xlabel("x axis")
+plt.ylabel("y axis")
+plt.grid(color = 'black')
