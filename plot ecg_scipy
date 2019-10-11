@@ -1,0 +1,10 @@
+from scipy import misc
+import pandas as pd
+ecg = scipy.misc.electrocardiogram()
+plt.figure(figsize = (10,10))
+plt.plot(np.array(ecg), color = "red", linewidth = 2)
+plt.ylim(-2,2)
+plt.xlim(0,1000)
+plt.xlabel("time")
+plt.ylabel("heart rate")
+plt.grid(color = 'black')
