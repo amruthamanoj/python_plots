@@ -1,0 +1,21 @@
+import matplotlib as mpl
+import matplotlib.pyplot as plt
+plt.figure(figsize = (10,10), facecolor = "lightblue")
+changes_plot=[]
+def f(n):
+    if n == 0:
+         return 1/2
+    else:
+        changes = f(n-1)**2
+        changes_plot.append(changes)
+        return changes 
+
+f(15)
+plt.plot(changes_plot)
+plt.grid(color = "black")
+plt.show()
+
+for i in range(0,16):
+    print("f("+str(i)+")",f(i))
+
+
