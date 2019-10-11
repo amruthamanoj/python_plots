@@ -1,0 +1,12 @@
+plt.figure(figsize = (9,9), facecolor = "lightblue")
+from math import e
+y = np.linspace(0,10,100)
+x = np.linspace(-10,10,100)
+f1 = np.sin(x)
+
+plt.scatter(x,f1, color = 'darkred', marker = '+')
+
+plt.title('sin(x)')
+plt.xlabel("x axis")
+plt.ylabel("y axis")
+plt.grid(color = "black") 
