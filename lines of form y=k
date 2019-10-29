@@ -1,0 +1,10 @@
+plt.figure(figsize = (10,10), facecolor = "pink")
+x = np.arange(0,10)
+y = [2,2,2,2,2,2,2,2,2,2]#k=2
+df = pd.DataFrame()
+df['x'] = x
+df['y'] = y
+x=np.array(df.x).reshape(-1,1)
+y=np.array(df.y).reshape(-1,1)
+plt.plot(x,y,color = 'red', linewidth = 4)
+plt.grid(color = 'black')
