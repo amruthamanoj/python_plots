@@ -16,7 +16,7 @@ X, Y = np.meshgrid(X, Y)
 Z = np.cos(X-Y)
   
 
-surf = ax.plot_surface(X, Y, Z, cmap=cm.coolwarm,
+surf = ax.plot_surface(X, Y, Z, cmap=cm.ocean,
                        linewidth=0, antialiased=False)
 
 
