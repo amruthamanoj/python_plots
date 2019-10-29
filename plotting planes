@@ -1,0 +1,15 @@
+import numpy as np
+import matplotlib.pyplot as plt
+from mpl_toolkits.mplot3d import Axes3D
+
+x = np.linspace(-1,1,10)
+y = np.linspace(-1,1,10)
+
+X,Y = np.meshgrid(x,y)
+for i in range(0,4):
+    Z= i*X + 3*Y + i
+
+    fig = plt.figure()
+    ax = fig.gca(projection='3d')
+    print("Z = " +str(i)+"x + 3y + " + str(i))
+    surf = ax.plot_surface(X, Y, Z, color = "pink")
